@@ -1,0 +1,4 @@
+.footer3D {
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+  transform: perspective(800px) rotateX(-1deg);
+}

@@ -1,0 +1,35 @@
+/* Reviews.module.css */
+.reviewCard {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+}
+
+.reviewerName {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.commentText {
+  font-style: italic;
+  color: #555;
+}
+
+.starRating {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
