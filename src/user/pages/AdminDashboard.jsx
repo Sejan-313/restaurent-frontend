@@ -14,9 +14,9 @@ const AdminDashboard = () => {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const menuRes = await axios.get("https://restaurant-backend-w42j.onrender.com/api/menu");
+      const menuRes = await axios.get("https://restaurant-backend-8.onrender.com/api/menu");
       const reviewRes = await axios.get(
-        "https://restaurant-backend-w42j.onrender.com/api/reviews/admin/all"
+        "https://restaurant-backend-8.onrender.com/api/reviews/admin/all"
       );
       setMenuItems(menuRes.data);
       setReviews(reviewRes.data);
@@ -34,7 +34,7 @@ const AdminDashboard = () => {
   // Toggle review approval
   const toggleApproval = async (id) => {
     try {
-      await axios.put(`https://restaurant-backend-w42j.onrender.com/api/reviews/admin/toggle/${id}`);
+      await axios.put(`https://restaurant-backend-8.onrender.com/api/reviews/admin/toggle/${id}`);
       setMessage("Review approval status updated!");
       fetchData();
       setTimeout(() => setMessage(""), 3000);
@@ -47,7 +47,7 @@ const AdminDashboard = () => {
   const deleteReview = async (id) => {
     if (!window.confirm("Are you sure you want to delete this review?")) return;
     try {
-      await axios.delete(`https://restaurant-backend-w42j.onrender.com/api/reviews/${id}`);
+      await axios.delete(`https://restaurant-backend-8.onrender.com/api/reviews/${id}`);
       setMessage("Review deleted!");
       fetchData();
       setTimeout(() => setMessage(""), 3000);

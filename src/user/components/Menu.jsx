@@ -10,7 +10,7 @@ const Menu = () => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const res = await axios.get('https://restaurant-backend-w42j.onrender.com/api/menu');
+        const res = await axios.get('https://restaurant-backend-8.onrender.com/api/menu');
         setMenu(res.data);
       } catch (err) {
         setError('Failed to load menu. Please try again later.');

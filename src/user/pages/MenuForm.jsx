@@ -20,8 +20,8 @@ const MenuForm = ({ existingItem, onSuccess }) => {
 
     try {
       const url = existingItem
-        ? `https://restaurant-backend-w42j.onrender.com/api/menu/${existingItem._id}`
-        : 'https://restaurant-backend-w42j.onrender.com/api/menu';
+        ? `https://restaurant-backend-8.onrender.com/api/menu/${existingItem._id}`
+        : 'https://restaurant-backend-8.onrender.com/api/menu';
 
       const method = existingItem ? 'put' : 'post';
 
