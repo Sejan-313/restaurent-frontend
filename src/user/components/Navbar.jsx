@@ -22,30 +22,30 @@ const NavigationBar = () => {
             >
               Home
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/menu"
               className={({ isActive }) =>
                 `${styles.navLink} ${isActive ? styles.activeLink : ''}`
               }
             >
               Menu
-            </NavLink>
-            <NavLink
+            </NavLink> */}
+            {/* <NavLink
               to="/gallery"
               className={({ isActive }) =>
                 `${styles.navLink} ${isActive ? styles.activeLink : ''}`
               }
             >
               Gallery
-            </NavLink>
-            <NavLink
+            </NavLink> */}
+            {/* <NavLink
               to="/reviews"
               className={({ isActive }) =>
                 `${styles.navLink} ${isActive ? styles.activeLink : ''}`
               }
             >
               Reviews
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to="/admin"
               className={({ isActive }) =>
