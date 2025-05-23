@@ -21,7 +21,7 @@ const MenuManager = ({ menuItems, fetchData, setMessage }) => {
     if (!window.confirm("Are you sure you want to delete this menu item?")) return;
 
     try {
-      await fetch(`https://restaurant-backend-8.onrender.com/api/menu/${id}`, { method: "DELETE" });
+      await fetch(`https://restaurant-backend-10.onrender.com/api/menu/${id}`, { method: "DELETE" });
       setMessage("Menu item deleted!");
       fetchData();
       setTimeout(() => setMessage(""), 3000);
