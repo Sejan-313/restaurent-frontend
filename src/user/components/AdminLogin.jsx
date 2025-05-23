@@ -13,7 +13,7 @@ const AdminLogin = () => {
     e.preventDefault();
     setError('');
     try {
-      const res = await axios.post('https://restaurant-backend-10.onrender.com/api/admin/login', { email, password });
+      const res = await axios.post('https://restaurant-backend-11.onrender.com/api/admin/login', { email, password });
       localStorage.setItem('adminToken', res.data.token);
       navigate('/admin/dashboard');
     } catch (err) {

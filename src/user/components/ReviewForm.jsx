@@ -14,7 +14,7 @@ const ReviewForm = () => {
     setError('');
 
     try {
-      await axios.post('https://restaurant-backend-10.onrender.com/api/reviews', {
+      await axios.post('https://restaurant-backend-11.onrender.com/api/reviews', {
         ...data,
         rating
       });
